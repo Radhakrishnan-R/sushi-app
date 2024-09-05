@@ -1,0 +1,159 @@
+.trending{
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    overflow: hidden;
+}
+
+.trending__sushi, .trending__drink{
+    display: flex;
+    flex-wrap: wrap;
+
+    min-height: 600px;
+    width: 100%;
+}
+
+.trending__drink{
+    flex-direction: row-reverse;
+}
+
+.trending__content{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+    min-width: 400px;
+    padding: 40px;
+}
+
+.trending__list-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+
+    list-style: none;
+    max-width: 500px;
+
+    
+}
+
+.trending__list-item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    min-width: 180px;
+
+    font-family: var(--plus-jakarta-sans);
+}
+
+.trending__icon{
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending__list-item img{
+    width: 20px;
+    height: 20px;
+}
+
+.trending__image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* padding: 30px; */
+    padding: 40px;
+    min-width: 400px;
+    position: relative;
+
+    background-color: #fff;
+    background-image: url("../../assets/japanese_sushi.png");
+}
+
+.trending__image img{
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.trending__arrow-bottom, .trending__arrow-left{
+    position: absolute;
+    z-index: 1;
+}
+
+.trending__arrow-bottom{
+   width: 60%;
+   height: 1px;
+   background-color: rgba(0, 0, 0, 0.5);
+   bottom: 0;
+    
+}
+
+.trending__arrow-left{
+    height: 60%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+}
+
+.trending__arrow-top, .trending__arrow-right{
+    position: absolute;
+    z-index: 1;
+}
+
+
+.trending__arrow-right{
+    height: 60%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    right: 0;
+}
+
+.trending__arrow-top{
+    width: 60%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+     
+ }
+
+ .trending__button{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+
+    height: 120px;
+    width: 120px;
+
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+
+    background-color: black;
+    color: #fff;
+    font-family: var(--plus-jakarta-sans);
+    font-size: 1.1rem;
+
+    cursor: pointer;
+ }

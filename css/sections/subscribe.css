@@ -1,0 +1,72 @@
+.subscribe{
+    padding: 50px;
+
+    background-color: var(--primary-color);
+    background-image: url("../../assets/subscribe_bg.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    overflow: hidden;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.subscribe__title{
+    font-size: 4rem;
+    color: #fff;
+    line-height: 150%;
+    text-align: center;
+    font-family: var(--playfair-display);
+}
+
+.subscribe__description{
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: var(--plus-jakarta-sans);
+}
+
+.subscribe__form{
+    padding: 10px;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 46px;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.subscribe__form input{
+    border: none;
+    outline: none;
+    padding: 20px;
+    
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem;
+
+    flex: 1;
+}
+
+.subscribe__form input::placeholder{
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--plus-jakarta-sans);
+}
+
+.subscribe__form button{
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 46px;
+
+    width: 100%;
+    max-width: 150px;
+
+    background-color: var(--black-400);
+    color: #fff;
+}

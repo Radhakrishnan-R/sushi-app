@@ -1,0 +1,80 @@
+.about-us{
+    display: flex;
+    min-height: 700px;
+    overflow: hidden;
+}
+
+.about-us__image{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--color-white);
+
+    position: relative;
+}
+
+.about-us__image div{
+    width: 100%;
+    padding: 20px 64px;
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+   
+}
+
+.about-us__image-sushi3{
+    background-image: url("../../assets/about_bg1.png");
+
+    border-bottom: 8px solid var(--color-creamson);
+}
+
+.about-us__image-sushi2{
+    background-image: url("../../assets/about_bg2.png")
+}
+
+.about-us__image-sushi3 > img{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.about-us__image-sushi2 > img{
+    width: 200px;
+    height: 200px;
+}
+
+.about-us__image > button{
+    position: absolute;
+    right: 0;
+    
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+    border-radius: 32px 0 0 32px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: var(--black-200);
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.about-us__content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 40px;
+}
